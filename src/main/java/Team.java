@@ -38,8 +38,6 @@ public class Team {
         this.seed = seed;
     }
 
-}
-
     public static ArrayList makeTeams(ArrayList playerList) {
         Team t;
         for (int i = 0; i < playerList.size() - 1; i++) {
