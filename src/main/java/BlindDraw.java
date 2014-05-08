@@ -14,10 +14,14 @@ public class BlindDraw {
         playerList.add("Dennis");
         playerList.add("Dave");
         playerList.add("Bryan");
+        playerList.add("John");
+        playerList.add("Chris");
+        playerList.add("Jordan");
+        playerList.add("Mike");
 
         Collections.shuffle(playerList); // shuffler initial playerlist
         Team.makeTeams(playerList); // puts players into teams and assigns them seeds
-
+        System.out.println(playerList);
         System.out.println(teamList); //prints out the team array with seeds
 
     }

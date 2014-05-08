@@ -30,20 +30,19 @@ public class Team {
         return "{ " + p1 + ", " + p2 + ", " + seed + ", " + bracket + " }";
     }
 
-    public int getSeed() { //gets seed int of current instance of object team
-        return seed;
-    }
-
     public void setSeed(int seed) { //change seed int of current instance of object team
         this.seed = seed;
     }
 
     public static ArrayList makeTeams(ArrayList playerList) {
         Team t;
-        for (int i = 0; i < playerList.size() - 1; i++) {
+        int count = 1;
 
-            BlindDraw.teamList.add(t = new Team(playerList.get(i).toString(), playerList.get(i + 1).toString(), 0, 'W'));
-            t.setSeed(i + 1);
+        for (int i = 1; i < playerList.size(); i += 2) {
+            BlindDraw.teamList.add(t = new Team(playerList.get(i - 1).toString(), playerList.get(i).toString(), 0, 'W'));
+
+            t.setSeed(count);
+            count = count + 1;
         }
         return BlindDraw.teamList;
     }
