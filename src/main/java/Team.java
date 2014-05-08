@@ -39,6 +39,7 @@ public class Team {
         int count = 1;
 
         for (int i = 1; i < playerList.size(); i += 2) {
+            //creates new instance of team and passes to new array + adding players from player list array
             BlindDraw.teamList.add(t = new Team(playerList.get(i - 1).toString(), playerList.get(i).toString(), 0, 'W'));
 
             t.setSeed(count);
