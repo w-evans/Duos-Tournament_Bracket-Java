@@ -24,6 +24,7 @@ public class Team {
         this.seed = seed;
         this.bracket = bracket;
     }
+
     @Override
     public String toString() { // prints out more pretty like when calling an instance object of Team
         return "{ " + p1 + ", " + p2 + ", " + seed + ", " + bracket + " }";
@@ -37,12 +38,7 @@ public class Team {
         this.seed = seed;
     }
 
-    public ArrayList setTeamSeeds(ArrayList list) {
-        for (int i = 0; i < list.size(); i++) {
-            setSeed(i);
-        }
-        return list;
-    }
+}
 
     public static ArrayList makeTeams(ArrayList playerList) {
         Team t;
