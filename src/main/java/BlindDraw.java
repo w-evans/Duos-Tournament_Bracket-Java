@@ -19,10 +19,11 @@ public class BlindDraw {
         playerList.add("Mike");
 
         Collections.shuffle(playerList); // shuffle initial playerlist
-        Team.makeTeams(playerList); // puts players into teams and assigns them seeds
+        Team.makeTeams(playerList); // bread and butter method, puts players into teams and assigns them seeds
 
         //testing purposes
         System.out.println(playerList); //prints out player list
+        System.out.println();
         System.out.println(teamList); //prints out the team array with seeds
     }
 }
