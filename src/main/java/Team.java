@@ -26,7 +26,7 @@ public class Team {
     }
 
     @Override
-    public String toString() { // prints out more pretty like when calling an instance object of Team
+    public String toString() { // prints out nicely when calling an instance object of Team
         return "{ " + p1 + ", " + p2 + ", " + seed + ", " + bracket + " }";
     }
 
@@ -42,7 +42,7 @@ public class Team {
             //creates new instance of team and passes to new array + adding players from player list array
             BlindDraw.teamList.add(t = new Team(playerList.get(i - 1).toString(), playerList.get(i).toString(), 0, 'W'));
 
-            t.setSeed(count);
+            t.setSeed(count); //sets seed of current instance of team
             count = count + 1; //increments count by 1 every time an instance of team is created
         }
         return BlindDraw.teamList;
