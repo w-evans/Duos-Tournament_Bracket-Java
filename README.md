@@ -2,7 +2,9 @@ FinalProject
 ============
 CSIS10a - Java Programming Final Project
 
+
 Web App Blind Draw Tournament Bracket
+
 
 App will take player names and randomize teams of two based on the list of players and number of entries.
 Then, the app will organize a bracket system for each round of the tournament. Special considerations:
