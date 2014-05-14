@@ -5,6 +5,7 @@ public class BlindDraw {
 
     public static void main(String[] args) {
 
+        SeedShuffle.playerToTeams(SeedShuffle.playerList); // adds players & shuffles playerList
         SeedShuffle.makeTeams(SeedShuffle.playerList); // bread and butter method, puts players into teams and assigns them seeds
 
         //testing purposes
