@@ -1,4 +1,5 @@
 import java.util.*;
+import static java.util.Collections.*;
 
 public class BlindDraw {
 
@@ -18,14 +19,14 @@ public class BlindDraw {
         playerList.add("Jordan");
         playerList.add("Mike");
 
-        Collections.shuffle(playerList); // shuffle initial playerlist
+        shuffle(playerList); // shuffle initial playerlist
         Team.makeTeams(playerList); // bread and butter method, puts players into teams and assigns them seeds
 
         //testing purposes
-        System.out.println("Initial Player List:");
+        System.out.println("Initial Player List after shuffle:");
         System.out.println(playerList); //prints out player list
         System.out.println();
-        System.out.println("Teams after shuffle & seeding:");
+        System.out.println("Prints teams after seeding:");
         System.out.println(teamList); //prints out the team array with seeds
     }
 }
