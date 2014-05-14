@@ -33,4 +33,8 @@ public class Team {
     public void setSeed(int seed) { //change seed int of current instance of object team
         this.seed = seed;
     }
+
+    public int getSeed() {
+        return seed;
+    }
 }
