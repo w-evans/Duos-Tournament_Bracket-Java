@@ -20,7 +20,7 @@ public class BlindDraw {
         playerList.add("Mike");
 
         shuffle(playerList); // shuffle initial playerlist
-        Team.makeTeams(playerList); // bread and butter method, puts players into teams and assigns them seeds
+        SeedShuffle.makeTeams(playerList); // bread and butter method, puts players into teams and assigns them seeds
 
         //testing purposes
         System.out.println("Initial Player List after shuffle:");
