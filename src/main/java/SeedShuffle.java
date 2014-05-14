@@ -1,10 +1,16 @@
 import java.util.ArrayList;
+import static java.util.Collections.*;
 
 /**
  * Created by 10a16 on 5/13/14.
  */
 public class SeedShuffle {
+
+
     public static ArrayList makeTeams(ArrayList playerList) {
+
+        shuffle(BlindDraw.playerList); // shuffle initial playerlist
+
         Team t;
         int count = 1; //for setting seeds
 
