@@ -7,8 +7,8 @@ public class MatchUp {
     Object t2;
 
     public MatchUp() { //object constructor with defaults
-        this.t1 = BlindDraw.teamList.get(0);
-        this.t2 = BlindDraw.teamList.get(1);
+        this.t1 = SeedShuffle.teamList.get(0);
+        this.t2 = SeedShuffle.teamList.get(1);
     }
 
     public MatchUp(Object t1, Object t2) { //object constructor
