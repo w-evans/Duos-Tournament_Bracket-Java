@@ -15,9 +15,15 @@ public class BlindDraw {
         System.out.println("Prints teams after seeding:");
         System.out.println(Bracket.teamList); //prints out the team array with seeds
         System.out.println();
-        MatchUp.doBattle(Bracket.teamList.get(0), Bracket.teamList.get(1)); //test matchup
+
+        MatchUp.doBattle(Bracket.teamList.get(0), Bracket.teamList.get(1)); //test matchup round 1
+        MatchUp.doBattle(Bracket.teamList.get(1), Bracket.teamList.get(2)); //test matchup round 1
         System.out.println();
-        System.out.println("Current Loser's Bracket teams");
+        System.out.println("Current Loser's Bracket teams:");
         System.out.print(Bracket.loserList); //prints newly updated loser list
+        System.out.println();
+        System.out.println();
+        System.out.println("Current Winner's Bracket:");
+        System.out.println(Bracket.teamList);
     }
 }

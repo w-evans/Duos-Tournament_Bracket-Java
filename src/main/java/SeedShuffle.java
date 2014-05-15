@@ -16,8 +16,6 @@ public class SeedShuffle {
         Bracket.playerList.add("Bryan");
         Bracket.playerList.add("John");
         Bracket.playerList.add("Chris");
-        Bracket.playerList.add("Jordan");
-        Bracket.playerList.add("Mike");
 
         shuffle(playerList); // shuffle initial playerlist
 

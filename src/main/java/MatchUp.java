@@ -19,8 +19,7 @@ public class MatchUp {
 
     public static Team doBattle(Team t1, Team t2) {
         Scanner keyboard = new Scanner(System.in); //scanner for next int
-        System.out.println(t1 + " , and " + t2 + " do battle!");
-        System.out.println("Enter seed that won");
+        System.out.println(t1 + " , and " + t2 + " do battle!, Enter the seed that won: ");
 
         Team winner = null;
         int result = keyboard.nextInt();
@@ -38,6 +37,7 @@ public class MatchUp {
             Bracket.loserList.add(t1);
             Bracket.teamList.remove(t1);
             System.out.println(t2 + " wins!");
+            t2.setSeed(t1.getSeed()); // changes team seed +1 because they beat a higher seeded team
             System.out.println(t1 + " moved to loser's bracket!");
             winner = t1;
         }
