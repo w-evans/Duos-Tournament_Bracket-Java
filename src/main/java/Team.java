@@ -36,4 +36,12 @@ public class Team {
     public int getSeed() {
         return seed;
     }
+
+    public char getBracket() {
+        return bracket;
+    }
+
+    public void setBracket(char bracket) {
+        this.bracket = bracket;
+    }
 }

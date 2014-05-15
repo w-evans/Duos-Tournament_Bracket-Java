@@ -31,7 +31,9 @@ public class MatchUp {
             Bracket.teamList.remove(t2);
             System.out.println(t1 + " wins!");
             System.out.println(t2 + " moved to loser's bracket!");
-            winner = t2;
+            t2.setBracket('L'); // sets bracket indicator to 'L'
+            System.out.println();
+            winner = t1;
         }
         else if(result == second) {
             Bracket.loserList.add(t1);
@@ -39,7 +41,35 @@ public class MatchUp {
             System.out.println(t2 + " wins!");
             t2.setSeed(t1.getSeed()); // changes team seed +1 because they beat a higher seeded team
             System.out.println(t1 + " moved to loser's bracket!");
+            t1.setBracket('L'); //sets bracket indicator to 'L'
+            System.out.println();
+            winner = t2;
+        }
+        return winner;
+    }
+    public static Team doBattleLBracket(Team t1, Team t2) {
+        Scanner keyboard = new Scanner(System.in); //scanner for next int
+        System.out.println(t1 + " , and " + t2 + " do battle!, Enter the seed that won: ");
+
+        Team winner = null;
+        int result = keyboard.nextInt();
+        int first = t1.getSeed();
+        int second = t2.getSeed();
+
+        if(result == first) { //adds loser to loser bracket array list
+            System.out.println(t1 + " wins!");
+            System.out.println(t2 + " has been eliminated");
+            Bracket.loserList.remove(t2);
+            System.out.println();
             winner = t1;
+        }
+        else if(result == second) {
+            System.out.println(t2 + " wins!");
+            t2.setSeed(t1.getSeed()); // changes team seed +1 because they beat a higher seeded team
+            System.out.println(t1 + " has been eliminated");
+            Bracket.loserList.remove(t1);
+            System.out.println();
+            winner = t2;
         }
         return winner;
     }
