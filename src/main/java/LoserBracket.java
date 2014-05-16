@@ -13,7 +13,7 @@ public class LoserBracket {
                                                                                         //match L5
                                                                                         //winner of L3/winner L4
                                                                                                                      //match L6
-                                                                                                                    // loser W7/winner L5
+                                                                                                                    // loser W7/winner L5      //merge new match W8
                                                 //match L4
                                                 //loser match W6/winner match L2
         //match L2
