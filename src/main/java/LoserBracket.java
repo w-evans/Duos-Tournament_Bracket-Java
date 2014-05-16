@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class LoserBracket {
 
     public static void RoundOne(ArrayList loserList) {
+
+        if(Bracket.teamList.size() == 8) {
         //match L1
         //loser of match W1/loser of match W2
 
@@ -18,5 +20,6 @@ public class LoserBracket {
                                                 //loser match W6/winner match L2
         //match L2
         //loser of match W3/loser of match W4
+        }
     }
 }
