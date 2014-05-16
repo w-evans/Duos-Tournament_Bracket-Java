@@ -8,7 +8,7 @@ public class SeedShuffle {
 
     public static ArrayList playerToTeams(ArrayList playerList) {
 
-        Bracket.playerList.add("Will"); //add players
+        Bracket.playerList.add("Will"); //add 16 players, makes 8 teams
         Bracket.playerList.add("Mark");
         Bracket.playerList.add("Ben");
         Bracket.playerList.add("Dennis");
@@ -16,6 +16,14 @@ public class SeedShuffle {
         Bracket.playerList.add("Bryan");
         Bracket.playerList.add("John");
         Bracket.playerList.add("Chris");
+        Bracket.playerList.add("Steve");
+        Bracket.playerList.add("Robert");
+        Bracket.playerList.add("Mario");
+        Bracket.playerList.add("Tex");
+        Bracket.playerList.add("Ryan");
+        Bracket.playerList.add("Miranda");
+        Bracket.playerList.add("Jori");
+        Bracket.playerList.add("ToTo");
 
         shuffle(playerList); // shuffle initial playerlist
 

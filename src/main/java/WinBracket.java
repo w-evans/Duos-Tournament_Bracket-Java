@@ -43,25 +43,5 @@ public class WinBracket {
                                                     //loser match W6/winner match L2
 
         }
-        if(teamList.size() == 9) {
-            //team 1 plays team 2
-            //team 3 plays team 4
-            //team 5 plays team 6
-            //team 7 plays team 8
-
-            //team 9 has a bye to second round, plays winner of team1/team2
-        }
-        if(teamList.size() == 10) {}
-        if(teamList.size() == 11) {}
-        if(teamList.size() == 12) {}
-        if(teamList.size() == 13) {}
-        if(teamList.size() == 14) {}
-        if(teamList.size() == 15) {}
-        if(teamList.size() == 16) {}
-        if(teamList.size() == 17) {}
-        if(teamList.size() == 18) {}
-        if(teamList.size() == 19) {}
-        if(teamList.size() == 20) {}
-
     }
 }
