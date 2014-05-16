@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 /**
  * Created by 10a16 on 5/13/14.
  */
 public class LoserBracket {
 
-    public static void RoundOne() {
+    public static void RoundOne(ArrayList loserList) {
         //match L1
         //loser of match W1/loser of match W2
 
@@ -17,7 +18,5 @@ public class LoserBracket {
                                                 //loser match W6/winner match L2
         //match L2
         //loser of match W3/loser of match W4
-
-
     }
 }
