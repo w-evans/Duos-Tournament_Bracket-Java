@@ -1,5 +1,3 @@
-import java.util.*;
-import static java.util.Collections.*;
 
 public class BlindDraw {
 
