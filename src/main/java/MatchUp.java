@@ -73,5 +73,43 @@ public class MatchUp {
         }
         return winner;
     }
+    public static Team doBattleFinal(Team t1, Team t2) {
+        Scanner keyboard = new Scanner(System.in); //scanner for next int
+        t2.setSeed(2);
+        System.out.println(t1 + " , and " + t2 + " do battle!, FINAL ROUND!");
+
+        Team winner = null;
+        int result = keyboard.nextInt();
+        int first = t1.getSeed();
+        int second = t2.getSeed();
+
+        if(result == first) { //adds loser to loser bracket array list
+            System.out.println(t1 + " wins! and takes First place!");
+            System.out.println(t2 + " has been eliminated, but will take second place!");
+            Bracket.loserList.remove(t2);
+            System.out.println();
+            winner = t1;
+        }
+        else if(result == second) {
+            System.out.println(t2 + " wins!");
+            System.out.println(t1 + " has been moved to the Loser's Bracket!");
+            Bracket.loserList.add(t1);
+
+            System.out.println("SUDDEN DEATH, enter the seed that won:");
+            Scanner keyboard1 = new Scanner(System.in);
+            int result1 = keyboard.nextInt();
+            if(result1 == 1) {
+                System.out.println(t2 + " has been eliminated!");
+                System.out.println(t1 + " has taken first place!");
+            }
+            else if (result1 == 2) {
+                System.out.println(t1 + " has been eliminated!");
+                System.out.println(t2 + " has taken first place!");
+            }
+
+
+        }
+        return winner;
+    }
 
 }

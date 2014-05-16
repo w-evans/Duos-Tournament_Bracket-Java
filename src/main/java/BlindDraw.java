@@ -19,7 +19,8 @@ public class BlindDraw {
         Bracket.RoundWB(); //test winner bracket round
         Bracket.RoundLB(); //test Loser bracket round
 
-
+        Bracket.RoundWB(); //test second round
+        Bracket.RoundLB(); //test second round
 
         System.out.println();
         System.out.println("Current Loser's Bracket teams:");
@@ -28,5 +29,6 @@ public class BlindDraw {
         System.out.println();
         System.out.println("Current Winner's Bracket:");
         System.out.println(Bracket.teamList);
+
     }
 }
