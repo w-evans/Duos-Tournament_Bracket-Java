@@ -16,9 +16,9 @@ public class WinBracket {
                                     //match W5
                                     //winner of t1/t2 + t3/4
             //match W2
-            //team 3/team 4
-                                                                    //match W7
-                                                                    //winner of W5/winner W6
+            //team 3/team 4                                                                             //merge
+                                                                    //match W7                          //match W8
+                                                                    //winner of W5/winner W6            //winner of L6/winner W7
             //match W3
             //team 5/team 6
                                    //match W6
@@ -36,7 +36,7 @@ public class WinBracket {
                                                                                                 //match L5
                                                                                                 //winner of L3/winner L4
                                                                                                                             //match L6
-                                                                                                                            // loser W7/winner L5
+                                                                                                                            // loser W7/winner L5     //merge bracket
             //match L2
                 //loser of match W3/loser of match W4
                                                     //match L4
