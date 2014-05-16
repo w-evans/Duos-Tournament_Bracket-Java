@@ -20,13 +20,13 @@ public class BlindDraw {
         Bracket.RoundWB(); //test second round
         Bracket.RoundLB(); //test second round
 
-        System.out.println();
-        System.out.println("Current Loser's Bracket teams:");
-        System.out.print(Bracket.loserList); //prints newly updated loser list
-        System.out.println();
-        System.out.println();
-        System.out.println("Current Winner's Bracket:");
-        System.out.println(Bracket.teamList);
+        //System.out.println();
+        //System.out.println("Current Loser's Bracket teams:");
+        //System.out.print(Bracket.loserList); //prints newly updated loser list
+        //System.out.println();
+        //System.out.println();
+        //System.out.println("Current Winner's Bracket:");
+        //System.out.println(Bracket.teamList);
 
     }
 }
