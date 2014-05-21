@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
 /**
  * Created by wevans on 5/8/14.
  */
@@ -39,7 +41,7 @@ public class MatchUp {
             Bracket.loserList.add(t1);
             Bracket.teamList.remove(t1);
             System.out.println(t2 + " wins!");
-            t2.setSeed(t1.getSeed()); // changes team seed +1 because they beat a higher seeded team
+            //t2.setSeed(t1.getSeed()); // changes team seed +1 because they beat a higher seeded team
             System.out.println(t1 + " moved to loser's bracket!");
             t1.setBracket('L'); //sets bracket indicator to 'L'
             System.out.println();
@@ -107,9 +109,34 @@ public class MatchUp {
                 System.out.println(t2 + " has taken first place!");
             }
 
-
         }
         return winner;
     }
+  //  public static void bubbleSort(ArrayList teamList) {
+    //    public void bubblesort() {
 
-}
+      //      System.out.println(Bracket.teamList);
+        //    for (int a = 0; a < Bracket.teamList.size();) {
+          //      for (int b = 1; b < Bracket.teamList.size();) {
+            //        int currentNumber = Bracket.teamList.get(a).getSeed();
+              //      if (currentNumber > Bracket.teamList.get(b).getSeed()) {
+
+                //        Collections.swap(Bracket.teamList, a, b);
+                  //      int temp = Bracket.teamList.get(a).getSeed();
+                    //    Bracket.teamList.set(a, Bracket.teamList.get(b).setSeed());
+                      //  Bracket.teamList.set(b, temp);
+
+//                        a++;
+  //                      b++;
+
+//                    } else if (currentNumber < numbers.get(b)) {
+  //                      a++;
+    //                    b++;
+      //              }
+        //            System.out.println(numbers);
+          //      }
+           // }
+        //}
+          //  }
+    }
+
