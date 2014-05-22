@@ -15,12 +15,66 @@ public class BlindDraw {
         System.out.println();
 
         WinBracket.roundOne(Bracket.teamList);  //winners bracket round 1
+
+        System.out.println();
+        System.out.println("Current Loser's Bracket teams:");
+        System.out.print(Bracket.loserList); //prints newly updated loser list
+        System.out.println();
+        System.out.println();
+        System.out.println("Current Winner's Bracket:");
+        System.out.println(Bracket.teamList);
+
         LoserBracket.roundOne(Bracket.loserList); //losers bracket round 1
+
+        System.out.println();
+        System.out.println("Current Loser's Bracket teams:");
+        System.out.print(Bracket.loserList); //prints newly updated loser list
+        System.out.println();
+        System.out.println();
+        System.out.println("Current Winner's Bracket:");
+        System.out.println(Bracket.teamList);
+
         WinBracket.roundTwo(Bracket.teamList); //winners bracket round 2
+
+        System.out.println();
+        System.out.println("Current Loser's Bracket teams:");
+        System.out.print(Bracket.loserList); //prints newly updated loser list
+        System.out.println();
+        System.out.println();
+        System.out.println("Current Winner's Bracket:");
+        System.out.println(Bracket.teamList);
+
         LoserBracket.roundTwo(Bracket.loserList); //losers bracket round 2
 
-        Team.bubbleSort(Bracket.teamList); //bubble sorting seeds to make match ups correct
-        Team.bubbleSort(Bracket.loserList);
+        System.out.println();
+        System.out.println("Current Loser's Bracket teams:");
+        System.out.print(Bracket.loserList); //prints newly updated loser list
+        System.out.println();
+        System.out.println();
+        System.out.println("Current Winner's Bracket:");
+        System.out.println(Bracket.teamList);
+
+        LoserBracket.roundThree(Bracket.loserList); //losers round 3 should be before round 3 winners
+
+        System.out.println();
+        System.out.println("Current Loser's Bracket teams:");
+        System.out.print(Bracket.loserList); //prints newly updated loser list
+        System.out.println();
+        System.out.println();
+        System.out.println("Current Winner's Bracket:");
+        System.out.println(Bracket.teamList);
+
+        WinBracket.roundThree(Bracket.teamList);
+
+        System.out.println();
+        System.out.println("Current Loser's Bracket teams:");
+        System.out.print(Bracket.loserList); //prints newly updated loser list
+        System.out.println();
+        System.out.println();
+        System.out.println("Current Winner's Bracket:");
+        System.out.println(Bracket.teamList);
+
+        LoserBracket.roundFour(Bracket.loserList);
 
         System.out.println();
         System.out.println("Current Loser's Bracket teams:");

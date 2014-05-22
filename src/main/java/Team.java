@@ -54,7 +54,7 @@ public class Team {
     public static ArrayList bubbleSort(ArrayList teamList) {
 
         for(int i = 0; i < Bracket.teamList.size() - 1; i++){
-            for(int j=0; j < Bracket.teamList.size() - i - 1; j++){
+            for(int j = 0; j < Bracket.teamList.size() - i - 1; j++){
                 if(Bracket.teamList.get(j).compareSeed(Bracket.teamList.get(j+1)) > 0){
                 Team temp = Bracket.teamList.get(j);
                 Bracket.teamList.set(j, Bracket.teamList.get(j + 1));
@@ -63,5 +63,19 @@ public class Team {
         }
     }
         return Bracket.teamList;
+    }
+
+    public static ArrayList bubbleSortL(ArrayList loserList) {
+
+        for(int i = 0; i < Bracket.loserList.size() - 1; i++){
+            for(int j = 0; j < Bracket.loserList.size() - i - 1; j++){
+                if(Bracket.loserList.get(j).compareSeed(Bracket.loserList.get(j+1)) > 0){
+                    Team temp = Bracket.loserList.get(j);
+                    Bracket.loserList.set(j, Bracket.loserList.get(j + 1));
+                    Bracket.loserList.set(j + 1, temp);
+                }
+            }
+        }
+        return Bracket.loserList;
     }
 }

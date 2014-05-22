@@ -42,7 +42,8 @@ public class WinBracket {
             Bracket.teamList.get(3).setSeed(4); //sets winner seed to 4
             Bracket.loserList.get(3).setSeed(4); //sets loser seed to 4
 
-
+            Team.bubbleSort(Bracket.teamList);
+            Team.bubbleSortL(Bracket.loserList);
         }
     }
 
@@ -66,11 +67,12 @@ public class WinBracket {
             System.out.println("Match W6");
             MatchUp.doBattle(Bracket.teamList.get(1), Bracket.teamList.get(2));
             Bracket.teamList.get(1).setSeed(2); //winner gets seed of 2
+            Bracket.loserList.get(3).setSeed(4); //loser gets seed of 2
 
-            //System.out.println("Winners:");
-            //System.out.println(Bracket.teamList);
-            //System.out.println("Losers:");
-            //System.out.println(Bracket.loserList);
+            Team.bubbleSort(Bracket.teamList);
+            Team.bubbleSortL(Bracket.loserList);
+
+
         }
     }
 
