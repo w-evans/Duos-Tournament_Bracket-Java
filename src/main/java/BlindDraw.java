@@ -14,19 +14,13 @@ public class BlindDraw {
         System.out.println(Bracket.teamList); //prints out the team array with seeds
         System.out.println();
 
-        WinBracket.roundOne(Bracket.teamList);
+        WinBracket.roundOne(Bracket.teamList);  //winners bracket round 1
+        LoserBracket.roundOne(Bracket.loserList); //losers bracket round 1
+        WinBracket.roundTwo(Bracket.teamList); //winners bracket round 2
+        LoserBracket.roundTwo(Bracket.loserList); //losers bracket round 2
 
-        LoserBracket.roundOne(Bracket.loserList);
-
-        WinBracket.roundTwo(Bracket.teamList);
-
-        Team.bubbleSort(Bracket.teamList);
-
-
+        Team.bubbleSort(Bracket.teamList); //bubble sorting seeds to make match ups correct
         Team.bubbleSort(Bracket.loserList);
-
-
-        LoserBracket.roundTwo(Bracket.loserList);
 
         System.out.println();
         System.out.println("Current Loser's Bracket teams:");
