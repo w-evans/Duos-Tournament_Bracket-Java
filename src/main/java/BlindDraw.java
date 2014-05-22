@@ -20,6 +20,12 @@ public class BlindDraw {
 
         WinBracket.roundTwo(Bracket.teamList);
 
+        Team.bubbleSort(Bracket.teamList);
+
+
+        Team.bubbleSort(Bracket.loserList);
+
+
         LoserBracket.roundTwo(Bracket.loserList);
 
         System.out.println();

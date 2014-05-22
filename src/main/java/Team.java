@@ -44,4 +44,24 @@ public class Team {
     public void setBracket(char bracket) {
         this.bracket = bracket;
     }
+
+    public int compareSeed(Team t1) {
+        if(this.getSeed() > t1.getSeed()) return 1;
+        if(this.getSeed() < t1.getSeed()) return -1;
+
+        return 0;
+    }
+    public static ArrayList bubbleSort(ArrayList teamList) {
+
+        for(int i = 0; i < Bracket.teamList.size() - 1; i++){
+            for(int j=0; j < Bracket.teamList.size() - i - 1; j++){
+                if(Bracket.teamList.get(j).compareSeed(Bracket.teamList.get(j+1)) > 0){
+                Team temp = Bracket.teamList.get(j);
+                Bracket.teamList.set(j, Bracket.teamList.get(j + 1));
+                Bracket.teamList.set(j + 1, temp);
+            }
+        }
+    }
+        return Bracket.teamList;
+    }
 }
