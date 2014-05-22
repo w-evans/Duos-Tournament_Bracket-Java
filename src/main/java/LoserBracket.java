@@ -8,8 +8,7 @@ public class LoserBracket {
 
         System.out.println("Loser's Bracket: Round 1 Starting:");
 
-        //4 teams in winners, 4 in losers
-        if(Bracket.teamList.size() == 4 && Bracket.loserList.size() == 4) {
+        if(Bracket.teamList.size() == 4 && Bracket.loserList.size() == 4) { //4 teams in winners, 4 in losers
 
         //match L1
         //loser of match W1/loser of match W2
@@ -17,18 +16,15 @@ public class LoserBracket {
         System.out.println("Match L1");
         MatchUp.doBattleLBracket(Bracket.loserList.get(0), Bracket.loserList.get(1));
          Bracket.loserList.get(0).setSeed(1); //winner gets seed of 1
-         //loser eliminated
 
         //match L2
         //loser of match W3/loser of match W4
         //seeds 3 & 4
         System.out.println("Match L2");
         MatchUp.doBattleLBracket(Bracket.loserList.get(1), Bracket.loserList.get(2));
-        //winner gets seed of 3
-        Bracket.loserList.get(1).setSeed(3);
-        //loser eliminated
+        Bracket.loserList.get(1).setSeed(3);  //winner gets seed of 3
 
-
+            //sorts teams by seed after round
             Team.bubbleSort(Bracket.teamList);
             Team.bubbleSortL(Bracket.loserList);
         }
@@ -54,6 +50,7 @@ public class LoserBracket {
             MatchUp.doBattleLBracket(Bracket.loserList.get(1), Bracket.loserList.get(2));
             Bracket.loserList.get(1).setSeed(2); //winner gets seed of 2
 
+            //sorts teams by seeds after round
             Team.bubbleSort(Bracket.teamList);
             Team.bubbleSortL(Bracket.loserList);
         }
@@ -72,7 +69,6 @@ public class LoserBracket {
             MatchUp.doBattleLBracket(Bracket.loserList.get(0), Bracket.loserList.get(1));
             Bracket.loserList.get(0).setSeed(1);//winner gets seed of 1
         }
-
     }
 
     public static void roundFour(ArrayList loserList) {

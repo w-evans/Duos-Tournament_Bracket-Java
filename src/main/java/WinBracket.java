@@ -72,7 +72,6 @@ public class WinBracket {
             Team.bubbleSort(Bracket.teamList);
             Team.bubbleSortL(Bracket.loserList);
 
-
         }
     }
 
@@ -95,6 +94,5 @@ public class WinBracket {
             //winner of W7 & winner of L6
             MatchUp.doBattle(Bracket.teamList.get(0), Bracket.teamList.get(1));
         }
-
     }
 }
