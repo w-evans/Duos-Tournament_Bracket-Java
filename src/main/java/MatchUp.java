@@ -112,31 +112,5 @@ public class MatchUp {
         }
         return winner;
     }
-  //  public static void bubbleSort(ArrayList teamList) {
-    //    public void bubblesort() {
-
-      //      System.out.println(Bracket.teamList);
-        //    for (int a = 0; a < Bracket.teamList.size();) {
-          //      for (int b = 1; b < Bracket.teamList.size();) {
-            //        int currentNumber = Bracket.teamList.get(a).getSeed();
-              //      if (currentNumber > Bracket.teamList.get(b).getSeed()) {
-
-                //        Collections.swap(Bracket.teamList, a, b);
-                  //      int temp = Bracket.teamList.get(a).getSeed();
-                    //    Bracket.teamList.set(a, Bracket.teamList.get(b).setSeed());
-                      //  Bracket.teamList.set(b, temp);
-
-//                        a++;
-  //                      b++;
-
-//                    } else if (currentNumber < numbers.get(b)) {
-  //                      a++;
-    //                    b++;
-      //              }
-        //            System.out.println(numbers);
-          //      }
-           // }
-        //}
-          //  }
-    }
+}
 
