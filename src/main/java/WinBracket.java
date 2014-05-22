@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import javax.swing.*;
+import java.awt.*;
 /**
  * Created by 10a16 on 5/13/14.
  */
@@ -7,6 +9,19 @@ public class WinBracket {
     public static void roundOne(ArrayList teamList) {
 
         if(teamList.size() == 8) {
+
+
+            JFrame frame = new JFrame("Blind Draw Tournament"); //creates the JFrame window
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exits on close
+            frame.setSize(350, 350); //sets size of JFrame window
+            frame.setLayout(new GridLayout(8, 8));
+
+            //match 1
+            frame.add(new JLabel(Bracket.teamList.get(0).toString()));
+            frame.add(new JLabel(Bracket.teamList.get(2).toString()));
+            //match 2
+            frame.setVisible(true); // makes the window visible, put at end of program
+
 
             System.out.println("Winner's Bracket Round 1 Starting:");
 
