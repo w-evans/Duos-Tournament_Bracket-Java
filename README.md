@@ -3,7 +3,7 @@ FinalProject
 CSIS10a - Java Programming Final Project
 
 
-Web App Blind Draw Tournament Bracket
+Blind Draw Tournament Bracket Application
 
 
 App will take player names and randomize teams of two based on the list of players and number of entries.
@@ -12,8 +12,11 @@ Best of 3, both a winners and losers bracket because the tournament will be Doub
 Calculate payouts based on entry fee, and able to keep track of High Scores on the side. 
 
 
--BlindDraw class will be main class, includes main method, imports/shuffler, and two ArrayList declarations
-
--Team object created, parameters: 2 players strings, a seed integer, and a character 'W' or 'L' for winner or losers bracket.
-
--MatchUp class started
+-BlindDraw class (holds main method)
+-Team class (holds team objects; 4 param: player1, player2, seed, bracket designator)
+-MatchUp class 
+-Bracket class (Holds 3 ArrayLists, and method calls for each round in proper order)
+-SeedShuffler class (shuffles playerlist and assigns teams, and seeds)
+-WinBracket class (holds the round matchups for winner's bracket)
+-LoserBracket clas (holds the round matchups for loser's bracket)
+-DrawBracket class (draws the bracket with swing components)
