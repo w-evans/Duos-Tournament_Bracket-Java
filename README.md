@@ -16,7 +16,7 @@ Calculate payouts based on entry fee, and able to keep track of High Scores on t
 
 -Team class (holds team objects; 4 param: player1, player2, seed, bracket designator)
 
--MatchUp class 
+-MatchUp class (holds doBattle methods that advance teams or eliminate them)
 
 -Bracket class (Holds 3 ArrayLists, and method calls for each round in proper order)
 
