@@ -6,24 +6,19 @@ CSIS10a - Java Programming Final Project
 Blind Draw Tournament Bracket Application
 
 
-App will take player names and randomize teams of two based on the list of players and number of entries.
-Then, the app will organize a bracket system for each round of the tournament. Special considerations:
-Best of 3, both a winners and losers bracket because the tournament will be Double elimination. Additional features;
-Calculate payouts based on entry fee, and able to keep track of High Scores on the side. 
+Instructions:
+
+1) Upon compile/run, Program automatically adds 16 players, shuffles them, and assigns teams of 2 and prepares first round matchups
+2) Negotiate each invidiual matchup (blue blocks) by clicking grey ".." button, winner will progress to next round, loser will move brackets
+3) Progress each matchup in whatever order you like until final round is populated with two teams, and an alert window will appear showing the winner when that matchup is completed
 
 
--BlindDraw class (holds main method)
+Additional Notes:
+-Player add/delete functionality is not complete (future project)
+-Upper right list will display the teams (will display added players in future)
 
--Team class (holds team objects; 4 param: player1, player2, seed, bracket designator)
 
--MatchUp class (holds doBattle methods that advance teams or eliminate them)
 
--Bracket class (Holds 3 ArrayLists, and method calls for each round in proper order)
-
--SeedShuffler class (shuffles playerlist and assigns teams, and seeds)
-
--WinBracket class (holds the round matchups for winner's bracket)
-
--LoserBracket clas (holds the round matchups for loser's bracket)
-
--DrawBracket class (draws the bracket with swing components)
+Key things learned:
+I needed a lot less code and classes than I expected. I should of worked on the GUI first, it was a pain but I learned a lot about swing components and I feel like I will make a much more polished and functional GUI on the next project I work on. I also learned how to use
+Github a bunch, and look forward to learning the more intricate details about the small important stuff I can do to manage a project.
