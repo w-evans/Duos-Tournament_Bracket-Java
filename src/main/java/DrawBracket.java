@@ -112,7 +112,7 @@ public class DrawBracket extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
             }
-        }); //match w1 - mouse click
+        });
         //match w2
         jLabel17.setText(SeedShuffle.teamList.get(2).toString());
         jLabel18.setText(SeedShuffle.teamList.get(3).toString());
@@ -120,7 +120,7 @@ public class DrawBracket extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
             }
-        }); //match w2 - mouse click
+        });
         //match w3
         jLabel19.setText(SeedShuffle.teamList.get(4).toString());
         jLabel20.setText(SeedShuffle.teamList.get(5).toString());
@@ -128,7 +128,7 @@ public class DrawBracket extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton4MouseClicked(evt);
             }
-        }); //match w3 - mouse click
+        });
         //match w4
         jLabel21.setText(SeedShuffle.teamList.get(6).toString());
         jLabel22.setText(SeedShuffle.teamList.get(7).toString());
@@ -136,7 +136,67 @@ public class DrawBracket extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton5MouseClicked(evt);
             }
-        }); //match w4 - mouse click
+        });
+        //match w5
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
+        //match w6
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
+        //match w7
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton12MouseClicked(evt);
+            }
+        });
+        //match w8
+        jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton14MouseClicked(evt);
+            }
+        });
+        //match L1
+        jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton13MouseClicked(evt);
+            }
+        });
+        //match L2
+        jButton15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton15MouseClicked(evt);
+            }
+        });
+        //match L3
+        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton8MouseClicked(evt);
+            }
+        });
+        //match L4
+        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton10MouseClicked(evt);
+            }
+        });
+        //match L5
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
+        //match L6
+        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton11MouseClicked(evt);
+            }
+        });
         //buttons
         jButton1.setText("..");
         jButton2.setText("..");
@@ -844,16 +904,16 @@ public class DrawBracket extends javax.swing.JFrame {
                 JOptionPane.PLAIN_MESSAGE,
                 null,
                 poss,
-                "ham");  //27 & 23
+                null);
 
         if ((s != null) && (s.length() > 0)) {
             if(s.equals(SeedShuffle.teamList.get(0).toString())) {
-                jLabel27.setText(SeedShuffle.teamList.get(0).toString()); //w5
-                jLabel23.setText(SeedShuffle.teamList.get(1).toString()); //l1
+                jLabel27.setText(SeedShuffle.teamList.get(0).toString());
+                jLabel23.setText(SeedShuffle.teamList.get(1).toString());
             }
             else if (s.equals(SeedShuffle.teamList.get(1).toString())) {
-                jLabel27.setText(SeedShuffle.teamList.get(1).toString()); //w5
-                jLabel23.setText(SeedShuffle.teamList.get(0).toString()); //l1
+                jLabel27.setText(SeedShuffle.teamList.get(1).toString());
+                jLabel23.setText(SeedShuffle.teamList.get(0).toString());
             }
             return;
         }
@@ -868,13 +928,12 @@ public class DrawBracket extends javax.swing.JFrame {
                 JOptionPane.PLAIN_MESSAGE,
                 null,
                 poss,
-                "");
+                null);
 
-        //w2
         if ((s != null) && (s.length() > 0)) {
             if(s.equals(SeedShuffle.teamList.get(2).toString())) {
-            jLabel28.setText(SeedShuffle.teamList.get(2).toString()); //w5
-            jLabel24.setText(SeedShuffle.teamList.get(3).toString()); //l1
+            jLabel28.setText(SeedShuffle.teamList.get(2).toString());
+            jLabel24.setText(SeedShuffle.teamList.get(3).toString());
             }
             else if (s.equals(SeedShuffle.teamList.get(3).toString())) {
                 jLabel28.setText(SeedShuffle.teamList.get(3).toString());
@@ -893,16 +952,16 @@ public class DrawBracket extends javax.swing.JFrame {
                 JOptionPane.PLAIN_MESSAGE,
                 null,
                 poss,
-                "");   //29 & 25
+                null);
 
         if ((s != null) && (s.length() > 0)) {
             if(s.equals(SeedShuffle.teamList.get(4).toString())) {
-                jLabel29.setText(SeedShuffle.teamList.get(4).toString()); //w6
-                jLabel25.setText(SeedShuffle.teamList.get(5).toString()); //l2
+                jLabel29.setText(SeedShuffle.teamList.get(4).toString());
+                jLabel25.setText(SeedShuffle.teamList.get(5).toString());
             }
             else if (s.equals(SeedShuffle.teamList.get(5).toString())) {
-                jLabel29.setText(SeedShuffle.teamList.get(5).toString()); //w6
-                jLabel25.setText(SeedShuffle.teamList.get(4).toString()); //l2
+                jLabel29.setText(SeedShuffle.teamList.get(5).toString());
+                jLabel25.setText(SeedShuffle.teamList.get(4).toString());
             }
             return;
         }
@@ -916,22 +975,254 @@ public class DrawBracket extends javax.swing.JFrame {
                 "Match",
                 JOptionPane.PLAIN_MESSAGE,
                 null,
-                poss,   //30 and 26
-                "");
-        //w4
+                poss,
+                null);
+
         if ((s != null) && (s.length() > 0)) {
             if(s.equals(SeedShuffle.teamList.get(6).toString())) {
-                jLabel30.setText(SeedShuffle.teamList.get(6).toString()); //w6
-                jLabel26.setText(SeedShuffle.teamList.get(7).toString()); //l2
+                jLabel30.setText(SeedShuffle.teamList.get(6).toString());
+                jLabel26.setText(SeedShuffle.teamList.get(7).toString());
             }
             else if (s.equals(SeedShuffle.teamList.get(7).toString())) {
-                jLabel30.setText(SeedShuffle.teamList.get(7).toString()); //w6
-                jLabel26.setText(SeedShuffle.teamList.get(6).toString()); //l2
+                jLabel30.setText(SeedShuffle.teamList.get(7).toString());
+                jLabel26.setText(SeedShuffle.teamList.get(6).toString());
             }
             return;
         }
     }
-    // Variables declaration
+    //match w5
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel27.getText(), jLabel28.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                null);
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel27.getText())) {
+                jLabel35.setText(jLabel27.getText());
+                jLabel31.setText(jLabel28.getText());
+            }
+            else if (s.equals(jLabel28.getText())) {
+                jLabel35.setText(jLabel28.getText());
+                jLabel31.setText(jLabel27.getText());
+            }
+            return;
+        }
+    }
+    //match w6
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel29.getText(), jLabel30.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                null);
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel29.getText())) {
+                jLabel36.setText(jLabel29.getText());
+                jLabel33.setText(jLabel30.getText());
+            }
+            else if (s.equals(jLabel30.getText())) {
+                jLabel36.setText(jLabel30.getText());
+                jLabel33.setText(jLabel29.getText());
+            }
+            return;
+        }
+    }
+    //match w7
+    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel35.getText(), jLabel36.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                null);
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel36.getText())) {
+                jLabel43.setText(jLabel36.getText());
+                jLabel37.setText(jLabel35.getText());
+            }
+            else if (s.equals(jLabel35.getText())) {
+                jLabel43.setText(jLabel35.getText());
+                jLabel37.setText(jLabel36.getText());
+            }
+            return;
+        }
+    }
+    //match W8
+    private void jButton14MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel43.getText(), jLabel44.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                null);
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel43.getText())) {
+                JOptionPane.showMessageDialog(frame,
+                        jLabel43.getText() + " wins!",
+                        "Result",
+                        JOptionPane.WARNING_MESSAGE);
+            }
+            else if (s.equals(jLabel44.getText())) {
+                JOptionPane.showMessageDialog(frame,
+                        jLabel44.getText() + " wins!",
+                        "Result",
+                        JOptionPane.WARNING_MESSAGE);
+            }
+            return;
+        }
+    }
+    //match L1
+    private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel23.getText(), jLabel24.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                null);
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel23.getText())) {
+                jLabel32.setText(jLabel23.getText());
+            }
+            else if (s.equals(jLabel24.getText())) {
+                jLabel32.setText(jLabel24.getText());
+            }
+            return;
+        }
+    }
+    //match L2
+    private void jButton15MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel25.getText(), jLabel26.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                "ham");
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel25.getText())) {
+                jLabel34.setText(jLabel25.getText());
+            }
+            else if (s.equals(jLabel26.getText())) {
+                jLabel34.setText(jLabel26.getText());
+            }
+            return;
+        }
+    }
+    //match L3
+    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel31.getText(), jLabel32.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                "ham");
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel31.getText())) {
+                jLabel39.setText(jLabel31.getText()); //w6
+            }
+            else if (s.equals(jLabel32.getText())) {
+                jLabel39.setText(jLabel32.getText()); //w6
+            }
+            return;
+        }
+    }
+    //match L4
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel33.getText(), jLabel34.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                "ham");
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel33.getText())) {
+                jLabel40.setText(jLabel33.getText()); //w6
+            }
+            else if (s.equals(jLabel34.getText())) {
+                jLabel40.setText(jLabel34.getText()); //w6
+            }
+            return;
+        }
+    }
+    //match L5
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel39.getText(), jLabel40.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                "ham");
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel39.getText())) {
+                jLabel38.setText(jLabel39.getText()); //w6
+            }
+            else if (s.equals(jLabel40.getText())) {
+                jLabel38.setText(jLabel40.getText()); //w6
+            }
+            return;
+        }
+    }
+    //match L6
+    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {
+        Object[] poss = {jLabel37.getText(), jLabel38.getText()};
+        String s = (String)JOptionPane.showInputDialog(
+                frame,
+                "\"Which team is Victorious?\"",
+                "Match",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                poss,
+                "ham");
+
+        if ((s != null) && (s.length() > 0)) {
+            if(s.equals(jLabel37.getText())) {
+                jLabel44.setText(jLabel37.getText()); //w6
+            }
+            else if (s.equals(jLabel38.getText())) {
+                jLabel44.setText(jLabel38.getText()); //w6
+            }
+            return;
+        }
+    }
+        // Variables declaration
     public static JFrame frame;
 
     private javax.swing.JButton jButton1;
